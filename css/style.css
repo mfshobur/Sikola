@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+
+ 
+ /* STYLE */
+
+
+ /* @import url(//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display);
+
+ @font-face {font-family: "SF Pro Display"; src: url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot"); src: url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff") format("woff"), url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.svg#SF Pro Display") format("svg"); }  */
+
+ @font-face {
+  font-family: 'SF Pro Displays';
+  src: url('SFProDisplay.ttf') format('truetype');
+}
+body{
+  background-color: #E5E5E5;
+  font-family:"SF Pro Displays", arial;
+}
+
+a {
+  text-decoration: none;
+  color: #0862BC;
+}
+a:hover {
+  color: #0862EA;
+}
+
+/* IMG */
+.mainpage {
+  margin-top:112px;
+  margin-left:15vw;
+  float:left;
+}
+
+
+/* LOGINBOX */
+.container{
+  width:396px;
+  height:500px;
+  margin: 112px 100px;
+  padding:48px;
+  box-sizing:border-box;
+  display: inline-block;
+  background-color:#FFF;
+  border-radius: 20px;
+  box-shadow: 0px 0px 60px #0862BC;
+}
+
+/* educator student switch */
+.switch{
+  width:150px;
+  height:32px;
+  padding:2px;
+  background-color:#D7E2F4;
+  margin: 22px 0 0 0px;
+  border-radius:50px;
+  line-height: 32px;
+  font-size:0.92rem;
+}
+
+.switch-text{
+  margin: 0px 8px;
+}
+
+.input{
+  margin:40px 0px;
+  font-size:0.8rem;
+  font-weight:500;
+}
+
+input[type=text], input[type=password], select{
+  width:100%;
+  padding: 8px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input, a{
+  margin: 10px 0;
+}
+
+input:focus {
+  border: 1px solid #999;
+}
+
+input[type=submit], select {
+  width: 100%;
+  margin: 20px 0;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 7px;
+  color: #FFF;
+  background-color: #D52525;
+}
+input[type=submit]:hover {
+  background-color: #A02525;
+}
+
+.input hr {
+  border: 0.5px solid #c4c4c4;
+}
+
+.input span {
+  margin: 0 75px;
+}
+
+@media only screen and (max-width: 1160px) {
+  body {
+    padding: 10px 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mainpage {
+    max-width: 100%;
+    height:auto;
+    margin: 40px auto;
+  }
+
+  .container {
+    width: 330px;
+    margin: 30px auto;
+  }
+}

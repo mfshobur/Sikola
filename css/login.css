@@ -1,0 +1,185 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+
+ /* STYLE */
+@font-face {
+  font-family: 'SF Pro Displays';
+  src: url('../SFProDisplay.ttf') format('truetype');
+}
+body {
+  background-color: #e5e5e5;
+	font-family:"SF Pro Displays", arial;
+}
+
+/* Navigatioin Bar */
+.navbar {
+	position:fixed;
+	float: left;
+  float: left;
+  width: 230px;
+  height: 100vh;
+  background-color: #fff;
+	padding: 20px 10px;
+	box-sizing: border-box;
+}
+
+.navbar img {
+	max-width: 80%;
+	/* height: auto; */
+	margin: 0 20px;
+}
+
+.navbar .menu{
+	width: 150px;
+	margin: 60px auto;
+	box-sizing: border-box;
+	color: #102837;
+	font-size: 0.85rem;
+	font-weight: bolder;
+}
+
+.allmenu {
+	background-color: #F5F6F7;
+	height: 28px;
+	padding: 4px;
+	margin-top: 30px;
+	border-radius: 10px;
+}
+
+.allmenu:hover {
+	cursor:pointer;
+}
+.navbar .menu span, .navbar .menu2 span {
+	position:relative;
+	top: -7px;
+}
+
+.navbar .menu2 {
+	width: 150px;
+	margin: 120px auto;
+	box-sizing: border-box;
+	color: #102837;
+	font-size: 0.85rem;
+	font-weight: bolder;
+}
+
+/* Top Bar */
+.topbar {
+	/* background-color: blue; */
+	padding: 5px;
+}
+/* search */
+.search {
+	/* display: inline-block; */
+	background-color: #fff;
+	width: 200px;
+	height: 30px;
+	margin: 40px 0px 0px 300px;
+	padding: 3px 5px 4px 15px;
+	border-radius: 50px;
+	box-sizing: border-box;
+}
+
+.search img {
+	width: 20px;
+}
+
+input[type=text] {
+  outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	display: inline-block;
+	position: relative;
+	top: -4px;
+}
+
+/* profile */
+.profile {
+	float: right;
+	/* background-color: black; */
+	width: 300px;
+	margin: -30px 40px 0px 0px;
+	height: 30px;
+	/* padding: 3px 5px 4px 15px; */
+	/* border-radius: 50px; */
+	box-sizing: border-box;
+	display: flex;
+}
+
+.profile span {
+	font-weight: bolder;
+	margin: auto 8px auto 30px;
+}
+
+.arrow {
+	width: 17px;
+	object-fit: contain;
+}
