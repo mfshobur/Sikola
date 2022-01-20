@@ -175,7 +175,8 @@ input[type=submit]:hover {
 }
 
 .input span {
-  margin: 0 75px;
+  margin: 0px 0px 0px 28%;
+  font-size: 0.7rem;
 }
 
 @media only screen and (max-width: 1160px) {
@@ -194,5 +195,8 @@ input[type=submit]:hover {
   .container {
     width: 330px;
     margin: 30px auto;
+  }
+  .input span {
+    margin: 0px 0px 0px 20%;
   }
 }

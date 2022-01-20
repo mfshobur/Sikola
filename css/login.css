@@ -81,14 +81,14 @@ body {
 
 /* Navigatioin Bar */
 .navbar {
-	position:fixed;
-	float: left;
+  position:fixed;
+  float: left;
   float: left;
   width: 230px;
   height: 100vh;
   background-color: #fff;
-	padding: 20px 10px;
-	box-sizing: border-box;
+  padding: 20px 10px;
+  box-sizing: border-box;
 }
 
 .navbar img {
@@ -103,11 +103,10 @@ body {
 	box-sizing: border-box;
 	color: #102837;
 	font-size: 0.85rem;
-	font-weight: bolder;
+	font-weight: 500;
 }
 
 .allmenu {
-	background-color: #F5F6F7;
 	height: 28px;
 	padding: 4px;
 	margin-top: 30px;
@@ -115,7 +114,13 @@ body {
 }
 
 .allmenu:hover {
-	cursor:pointer;
+	cursor: pointer;
+	font-weight: bolder;
+	background-color: #F3F4F5;
+}
+
+.allmenu:active {
+	transform: scale(0.9);
 }
 .navbar .menu span, .navbar .menu2 span {
 	position:relative;
@@ -128,9 +133,13 @@ body {
 	box-sizing: border-box;
 	color: #102837;
 	font-size: 0.85rem;
-	font-weight: bolder;
+	font-weight: 500;
 }
 
+.active {
+	font-weight:bolder;
+	background-color:#F3F4F5;
+}
 /* Top Bar */
 .topbar {
 	/* background-color: blue; */
@@ -154,6 +163,7 @@ body {
 
 input[type=text] {
   outline: none;
+  width: 147px;
 	background-color: rgba(0, 0, 0, 0);
 	border: none;
 	display: inline-block;
@@ -182,4 +192,239 @@ input[type=text] {
 .arrow {
 	width: 17px;
 	object-fit: contain;
+}
+
+
+/* DISPLAY FOR EACH SECTION */
+
+/* DISPLAY SECTION FOR DASHBOARD */
+.maincontent {
+	/* background-color: black; */
+	max-width: 1150px;
+	height: calc(100vh - 100px);
+	margin: 10px 0px 5px 300px;
+	font-weight: bolder;
+	
+}
+
+/* GREETINGS */
+.maincontent .greetings {
+	font-size: 1.75rem;
+}
+/* INFORMATION BOX */
+
+/* erase display */
+.displaynone {
+	display: none;
+}
+
+.maincontent .information {
+	background-color: #fff;
+	width: 652px;
+	height: 137px;
+	margin: 30px 0;
+	padding: 0px 5px;
+	box-sizing:border-box;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.information .infobox {
+	/* background-color: black; */
+	width: 123px;
+	height: 58px;
+	display: flex;
+}
+
+.infobox img {
+	margin: auto 0;
+}
+
+.infobox .infoTitle {
+	color: #A6BED2;
+	font-size: 0.73rem;
+	margin: 10px 0px 0px 20px;
+}
+
+.infobox .mainInfo {
+	color: #000;
+	position: absolute;
+	margin: 35px 0px 0px 44px;
+	font-weight: bolder;
+}
+
+/* Recent Files */
+.maincontent .recentfiles {
+	background-color: #fff;
+	max-width: 652px;
+	height: 210px;
+	margin-top: 120px; 
+	padding: 25px 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.recentfiles .viewall {
+	float: right;
+	position: relative;
+	top: -15px;
+	right: 100px;
+}
+
+.recentfiles table {
+	margin: 20px 0;
+	border-spacing: 40px;
+}
+
+.recentfiles table tr {
+	color: #A6BED2;
+	font-weight: normal;
+	text-align: left;
+}
+
+/* Calendar */
+.maincontent .maincalendar {
+	background-color: #fff;
+	width: 300px;
+	height: 465px;
+	position:absolute;
+	top: 148px;
+	left: 1025px;
+	border-radius: 10px;
+	padding: 30px 20px;
+	box-sizing: border-box;
+}
+
+.maincalendar .chevronarrow {
+	float: right;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 30px;
+}
+.chevronarrow img {
+	width: 35%; 
+}
+
+.chevronarrow img:hover {
+	box-shadow: 1px 1px 1px black
+}
+
+.chevronarrow img:active {
+	transform:scale(0.8);
+}
+
+/* DISPLAY SECTION FOR MY CLASS */
+.myclassinformation {
+	background-color: #fff;
+	width: 675px;
+	height: 180px;
+	margin-top: 25px;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.myclassinformation img {
+	float: left;
+	width: 30%;
+	margin-right: 40px;
+	/* box-shadow: 1px 1px 5px black; */
+}
+
+.myclass-info {
+	margin: 20px 5px;
+	padding: 5px;
+	/* background-color: black; */
+}
+
+.myclass-info-title {
+	display: inline-block;
+	font-size: 1.7rem;
+	margin-bottom: 10px;
+}
+
+.myclass-info-desc {
+	display: block;
+	color: #9A9B9D;
+	font-size: 0.85rem;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+.myclass-info li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+
+/* DISPLAY SECTION FOR ALL COURSES */
+.filterby-container {
+	position: absolute;
+	left: 400px;
+	top: 90px;
+}
+.filterby {
+	float: right;
+	background-color: #2E82D7;
+	width: 100px;
+	height: 30px;
+	border-radius: 50px;
+	margin: 0px 0px 0px 15px;
+}
+
+
+.allmenuxtra {
+	display: flex;
+}
+
+.allmenuxtra:hover {
+	cursor: pointer;
+}
+
+/* DISPLAY SECTION FOR PROFILE */
+.profile-page {
+	background-color: #fff;
+	width: 980px;
+	height: calc(100vh - 130px);
+	border-radius: 10px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.profile-page p {
+	font-size: 2rem;
+}
+
+.profile-page table  {
+	width: 60%;
+	float: left;
+	margin-right: 50px;
+}
+
+.profile-page td {
+	font-weight: normal;
+}
+
+.profile-page td, .profile-page th {
+	height: 35px;
+	vertical-align: middle;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.profile-page tr:nth-child(odd) {background-color: #F4F8FE;}
+
+/* ANIMATION */
+.popup {
+	animation-name: popup;
+	animation-duration: 0.6s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+@keyframes popup {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
