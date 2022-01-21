@@ -22,8 +22,11 @@ menuArr.forEach(e => {
             // img.classList.add('displaynone');
             // console.log(img)
         });
-        e.firstElementChild.src = `../img/${e.id}on.png`;
+        e.firstElementChild.src = `../img/${e.id}On.png`;
         e.classList.add('active');
+        if ( profile.className = 'allmenuxtra active') {
+            profile.className = 'allmenuxtra';
+        }
 
         let selectedMenu = document.getElementById(`${e.id}menu`);
         selectedMenu.classList.remove('displaynone');
